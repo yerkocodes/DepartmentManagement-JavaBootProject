@@ -1,0 +1,22 @@
+-- Creacion de tablas
+CREATE TABLE departamentos (
+  numdepto INT PRIMARY KEY AUTO_INCREMENT, 
+  nomdepto VARCHAR(100), 
+  ubicaciondpto VARCHAR(100)
+);
+
+CREATE TABLE empleados (
+  numempleado INT PRIMARY KEY AUTO_INCREMENT, 
+  nombre VARCHAR(100), 
+  numdepto INT
+);
+
+CREATE TABLE usuarios_admin (
+  id_usuario INT PRIMARY KEY AUTO_INCREMENT, 
+  correo VARCHAR(100), 
+  pass VARCHAR(100)
+);
+
+ALTER TABLE empleados
+  ADD CONSTRAINT dep_empleado
+FOREIGN KEY (numdepto);
