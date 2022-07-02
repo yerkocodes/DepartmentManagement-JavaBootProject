@@ -2,7 +2,7 @@
 CREATE TABLE departamentos (
   numdepto INT PRIMARY KEY AUTO_INCREMENT, 
   nomdepto VARCHAR(100), 
-  ubicaciondpto VARCHAR(100)
+  ubicaciondepto VARCHAR(100)
 );
 
 CREATE TABLE empleados (
@@ -20,3 +20,97 @@ CREATE TABLE usuarios_admin (
 ALTER TABLE empleados
   ADD CONSTRAINT dep_empleado
 FOREIGN KEY (numdepto);
+
+INSERT INTO usuarios_admin (correo, pass) VALUES('admin@correo.cl','123');
+
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('INFORMATICA','CHILE');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('REDES','CHILE');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('PARTES','CHILE');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('SALUD','CHILE');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('BIENESTAR','CHILE');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('ASEO Y ORNATO','CHILE');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('CONTABILIDAD','PERU');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('RRHH','COLOMBIA');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('ASEO Y ORNATO','ARGENTINA');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('CONTABILIDAD','BOLIVIA');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('RRHH','MEXICO');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('CARRETE','CHILE');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('SEGURIDAD','PERU');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('MARKETING','COLOMBIA');
+INSERT INTO departamentos (nomdepto, ubicaciondepto) VALUES('MECANICA','CHILE');
+
+INSERT INTO empleados (nombre, numdepto) VALUES ('Matias Zarate', 15);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Felipe Perez', 15);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Bob Marley', 15);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Pedro Polanco', 15);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Eduardo Azul', 15);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Oscar Fernandez', 14);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Maria Jose Velasquez', 14);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Fernanda Parra', 14);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Teresa Valdez', 14);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ignacio MacGreg', 14);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Rodrigo Zarabia', 13);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Marcelo Zapata', 13);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Mark Jeres', 13);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Cristian Aguirre', 13);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Julian Martel', 13);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Kilos Demetrio', 12);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Astorga Daniel', 12);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Yeny Marlen', 12);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Julia Zapata', 12);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Esteban Cerrado', 12);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Kilos Demetrio Azul', 11);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Pablo Carmona', 11);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ramon Vicencio', 11);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Julia Veracruz', 11);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Joaquin Mendez', 11);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ricardo Abrilar', 10);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Rocio Vicencio', 10);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Bianca Vicencio', 10);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Graciela LLancavil', 10);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Enrique Carmona', 10);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Nora Allen', 9);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ramon Cisco', 9);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Frank Martin', 9);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Milena Snow', 9);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ruth Vitis', 9);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Sol Marisol', 8);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Jorge Carmona', 8);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Miguel Mac', 8);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Rafael Alarcon', 8);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ruth Vitis', 8);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Jhon Nieve', 7);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Martin Escoses', 7);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Alex Citrico', 7);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Marcelo de Cachureos', 7);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Alfonso Mastil', 7);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Juan Quiñones', 6);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Adamiro Rojas', 6);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Fernando Maciel', 6);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Carolina Merlot', 6);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Casandra Parra', 6);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Salomon Clavel', 5);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Quiste Martes', 5);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Carlos Zaul', 5);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Eduardo Bomvalet', 5);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Arturo Prat', 5);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Maria Jose Pinganilla', 4);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Carlonia Marsobia', 4);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Jose Jose', 4);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Esternon Peres', 4);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ivon Cadiz', 4);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Moscard Trek', 3);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Hugo Luis Merc', 3);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Casimiro Lavaca', 3);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Aston Gonzalez', 3);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Crecencio Fretere', 3);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Juan Pedro Pazola', 2);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Roquefort Martin', 2);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Carlos Espertes', 2);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Jino Janos', 2);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Ether Certero', 2);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Pepe Grillo', 1);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Marisol Luna', 1);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Pedro Cortisona', 1);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Eugenio Mundial', 1);
+INSERT INTO empleados (nombre, numdepto) VALUES ('Nelson Gertred', 1);
