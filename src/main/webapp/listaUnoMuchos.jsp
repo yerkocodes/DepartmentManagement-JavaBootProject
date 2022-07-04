@@ -17,29 +17,12 @@
 </head>
 <body class="bg-dark">
 	<div class="container-fluid bg-dark">
-		<div class="text-left text-white p-5 mb-0 bg-secondary">
-			<h1>Ejemplo relaciones con JSP</h1>
-			<p>Para el curso de JEE</p>
-		</div>
 
+		<!-- HEADER -->
+		<jsp:include page="layouts/header.jsp"></jsp:include>
 
-		<nav class="navbar navbar-expand-sm bg-dark navbar-dark p-1">
-			<a class="navbar-brand" href="#">Navegacion</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse"
-				data-target="#collapsibleNavbar">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="collapsibleNavbar">
-				<ul class="navbar-nav">
-					<li class="nav-item"><a class="nav-link"
-						href="procesaDepartamento">Departamentos</a></li>
-					<li class="nav-item"><a class="nav-link"
-						href="procesaEmpleado">Empleados</a></li>
-					<li class="nav-item"><a class="nav-link"
-						href="listaUnoMuchos.jsp">Busqueda Departamento</a></li>
-				</ul>
-			</div>
-		</nav>
+		<!-- NAVBAR -->
+		<jsp:include page="layouts/navBar.jsp"></jsp:include>
 
 		<div class="container text-white" style="margin-top: 30px">
 			<div class="row">
@@ -90,6 +73,9 @@
 			</form>
 		</div>
 	</div>
+	
+	<!-- FOOTER -->
+	<jsp:include page="layouts/footer.jsp"></jsp:include>
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
